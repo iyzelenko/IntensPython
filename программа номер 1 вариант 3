@@ -1,0 +1,17 @@
+#include <iostream> 
+#include <cmath> 
+using namespace std; 
+ 
+int main() 
+{ 
+    float a, b, c, e, f, g, h; 
+    cout << "Введите значения e, f, g, h: "; 
+    cin >> e, f, g, h; 
+    a = sqrt(pow(abs(e - 3/ f), 3) + g); 
+    b = sin(e) + pow(cos(h), 3); 
+    c = (33 * g) / (e * f - 3); 
+    cout << "a = " << a << endl; 
+    cout << "b = " << b << endl; 
+    cout << "c = " << c << endl; 
+    return 0; 
+}
