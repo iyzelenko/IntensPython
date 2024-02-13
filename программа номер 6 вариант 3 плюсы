@@ -1,0 +1,28 @@
+#include <iostream>
+
+int sum_digits(int number) {
+    int sum = 0;
+    while (number > 0) {
+        sum += number % 10;
+        number /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int number1, number2;
+    std::cout << "Введите первое число: ";
+    std::cin >> number1;
+    std::cout << "Введите второе число: ";
+    std::cin >> number2;
+
+    if (sum_digits(number1) > sum_digits(number2)) {
+        std::cout << "Сумма цифр первого числа больше.";
+    } else if (sum_digits(number1) < sum_digits(number2)) {
+        std::cout << "Сумма цифр второго числа больше.";
+    } else {
+        std::cout << "Сумма цифр обоих чисел одинакова.";
+    }
+
+    return 0;
+}
